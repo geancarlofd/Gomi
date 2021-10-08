@@ -1,9 +1,10 @@
 
+import Rotas from './rotas';
 
 function App() {
   return (
     <div>
-      Hello World!
+      <Rotas />
     </div>
   );
 }
