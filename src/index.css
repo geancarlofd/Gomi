@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.menu-cabecalho{
+  background-color: #c5ecb5;
+  color: #A89914;
+  font-size: 25px;
+  padding-left: 550px;
+  margin-top: -190px;
+}
+
+.imgGomi {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+}
+
+.imgGomiNome {
+  margin-top: 200px;
+  margin-left: -100px;
+  width: 300px;
+  height: 250px;
+}

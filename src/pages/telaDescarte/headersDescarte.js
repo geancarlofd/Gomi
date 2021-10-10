@@ -19,7 +19,7 @@ import { Collapse,
     const toggle = () => setIsOpen(!isOpen);
   
     return (
-      <div className="menu">
+      <div className="menu-cabecalho">
         <Navbar light expand="md" >
           <NavbarToggler onClick={toggle} />
   
@@ -27,7 +27,7 @@ import { Collapse,
   
             <Nav className="mr-auto" navbar>
               <NavItem>
-                <NavLink href="/">Login</NavLink>
+                <NavLink href="/ranking">Ranking</NavLink>
               </NavItem> &nbsp; &nbsp; &nbsp;
   
               <NavItem>
