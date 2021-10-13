@@ -23,19 +23,20 @@ class App extends Component{
 
     render(){
       return(
+
+        /* Menu Tela de Descarte */
         <div className="body">
 
           <div className="bcg-cabecalho">
-
             <img className="imgGomi" src={gomi}></img>
             <img className="imgGomiNome" src={gomiNome}></img>
             <Menu />
           </div>
 
           <div>
-
-          <p className="text-descarte">Esta tela é referente a Tela de Descarte, onde você irá cadastrar seus descartes. </p>
-          <FormularioDescarte />
+            <p className="text-descarte">Esta tela é referente a Tela de Descarte, onde você irá cadastrar seus descartes. </p>
+            <br/>
+            <FormularioDescarte />
           </div>
 
             

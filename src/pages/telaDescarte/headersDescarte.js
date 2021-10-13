@@ -26,18 +26,18 @@ import { Collapse,
           <Collapse isOpen={isOpen} navbar>
   
             <Nav className="mr-auto" navbar>
-              <NavItem>
+              <NavItem /* Menu Ranking */> 
                 <NavLink href="/ranking">Ranking</NavLink>
               </NavItem> &nbsp; &nbsp; &nbsp;
   
-              <NavItem>
+              <NavItem /* Menu GitHub */>
                 <NavLink href="https://github.com/geancarlofd/Gomi">GitHub</NavLink> 
               </NavItem>
             </Nav> &nbsp; &nbsp; &nbsp;
   
-            <NavbarText>Simple Text</NavbarText> &nbsp; &nbsp; &nbsp;
+            <NavbarText /* Menu Texto */>Simple Text</NavbarText> &nbsp; &nbsp; &nbsp;
 
-            <Nav navbar>
+            <Nav navbar /* Menu Opções */>
               <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle nav caret>
                     Options

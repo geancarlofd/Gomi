@@ -3,57 +3,82 @@ import { Col, Button, Form, FormGroup, Label, Input, FormText, FormFeedback, Row
 
 const FormularioDescarte = (props) => {
   return (
-      <div>
-    <Form className="body"> 
-      <FormGroup row>
-        <Label sm={2}>Nome do lixo descartado</Label>
-        <Col sm={7}>
-          <Input type="text" name="text" placeholder="Nome do lixo" />
-        </Col>
-      </FormGroup> <br/>
-      
 
-      <FormGroup row>
-        <Label sm={2}>Quantitade</Label>
-        <Col sm={1}>
-          <Input type="number" name="number" placeholder="Quantidade" />
-        </Col>
-      </FormGroup> <br/> 
+    //Modal com as opções de descarte 
 
-      <FormGroup>
-        <Label for="date" sm={2}>Data</Label>
-        <Col sm={1}>
-            <Input
-            type="date"
-            name="date"
-            id="date"
-            placeholder="Data"/>
-        </Col>
-      </FormGroup> <br/>
+    <table cellPadding="15" >
 
+      <tr>
+        <th rowSpan="1">Nome do lixo descartado</th> &nbsp; &nbsp; &nbsp;
+        <th rowSpan="1">Quantitade</th> &nbsp; &nbsp; &nbsp;
+        <th rowSpan="1">Data</th> &nbsp; &nbsp; &nbsp;
+      </tr>
+    
+     <tr>
+       <td /* Campo Nome do Lixo */ >    
+          <FormGroup row>
+            <Col sm={20}>
+              <Input type="text" name="text" placeholder="Nome do lixo" />
+            </Col>
+          </FormGroup>
+       </td>
 
-      <FormGroup row>
-        <Label for="exampleSelect" sm={2}>Tipo de reciclável</Label>
-        <Col sm={10}>
-          <Input type="select" name="select" id="exampleSelect2">
-            <option id="1">Lixo Reciclável</option>
-            <option id="2">Lixo Orgânico</option>
-          </Input>
-        </Col>
-      </FormGroup>
+      <td colSpan="20"></td>
 
-      <br/>
+        <td /* Campo Quantidade */ >
+          <FormGroup row>
+            <Col sm={7}>
+              <Input type="number" name="number" placeholder="Quantidade" />
+            </Col>
+          </FormGroup> <br/> 
+        </td>
 
-      <FormGroup check row>
-        <Col sm={{ size: 10, offset: 2 }}>
-          <Button>Submit</Button>
-        </Col>
-      </FormGroup>
-      
-    </Form>
+        <td colSpan="20"></td>
 
+        <td /* Campo Data */> 
+          <FormGroup>
+            <Col sm={1}>
+                <Input
+                type="date"
+                name="date"
+                id="date"
+                placeholder="Data"/>
+            </Col>
+          </FormGroup> 
+        </td>
+     </tr>
+  
 
-    </div>
+      <tr>
+        <th>Tipo do Lixo</th>
+      </tr>
+
+      <tr>
+        <td /* Campo Tipo do Lixo*/>
+          <FormGroup row>
+            <Col sm={20}>
+              <Input type="select" name="select" id="exampleSelect2">
+                <option id="1">Lixo Reciclável</option>
+                <option id="2">Lixo Orgânico</option>
+              </Input>
+            </Col>
+          </FormGroup>
+        </td>
+      </tr>
+          
+<br/>
+      <tr>
+        <td /* Campo Botão Enviar*/>
+          <FormGroup check row>
+            <Col sm={{ size: 10, offset: 2 }}>
+              <Button>Enviar</Button>
+            </Col>
+          </FormGroup>
+        </td>
+      </tr>
+
+    </table>
+    
   );
 }
 

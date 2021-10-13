@@ -12,6 +12,7 @@ code {
     monospace;
 }
 
+/* CSS do Cabecalho */
 .menu-cabecalho{
   background-color: #c5ecb5;
   color: #A89914;
@@ -20,12 +21,14 @@ code {
   margin-top: -190px;
 }
 
+/* CSS imagem do Gomi */
 .imgGomi {
   width: 60px;
   height: 60px;
   margin-left: 10px;
 }
 
+/* CSS do nome do Gomi */
 .imgGomiNome {
   margin-top: 200px;
   margin-left: -100px;
