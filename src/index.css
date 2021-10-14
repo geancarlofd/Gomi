@@ -14,11 +14,17 @@ code {
 
 /* CSS do Cabecalho */
 .menu-cabecalho{
-  background-color: #c5ecb5;
+  background-color: #577848;
   color: #A89914;
   font-size: 25px;
-  padding-left: 550px;
   margin-top: -190px;
+  margin-left: 35%;
+}
+
+/* CSS da parte de trás do cabeçalho */
+.bcg-cabecalho{
+  margin-top: -180px;
+  background-color: #577848;
 }
 
 /* CSS imagem do Gomi */

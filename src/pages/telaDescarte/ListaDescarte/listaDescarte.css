@@ -1,0 +1,56 @@
+/* Texto da página de Descarte */
+
+.table-titulo-mor{
+    color: #A89914;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.table-titulo{
+    color: #2B531A;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.table-tamanho-lista-descarte {
+    width: 75%;
+    margin-left: 13%;
+}
+
+.td-resposta {
+    width: 450px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+}
+
+.btn-editar{
+    color: white;
+    background-color: #A89914;
+    border: none;
+    width: 80px;
+    height: 45px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 5px;
+}
+
+.btn-editar:hover{
+    cursor: pointer;
+    background-color: #c5b41a;
+}
+
+.btn-excluir{
+    color: white;
+    background-color: #85290d;
+    border: none;
+    width: 80px;
+    height: 45px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.btn-excluir:hover:hover{
+    cursor: pointer;
+    background-color: #a04529;
+}

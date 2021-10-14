@@ -3,15 +3,4 @@ body{
     margin: auto;
 }
 
-/* Parte de trás do cabeçalho */
-.bcg-cabecalho{
-    margin-top: -180px;
-    background-color: #c5ecb5;
-}
 
-/* Testo da página de Descarte */
-.text-descarte {
-    text-align: center;
-    font-size: 35px;
-    color: #A89914;
-}

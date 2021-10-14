@@ -1,0 +1,80 @@
+import React from 'react';
+import {
+  Card, CardImg, CardText, CardBody,
+  CardTitle, CardSubtitle, Button
+} from 'reactstrap';
+import "./listaDescarte.css";
+
+const ListaDescarte = (props) => {
+  return (
+    <div>
+      
+      <table className="table-tamanho-lista-descarte">
+      <Card>
+        <CardBody>
+        <tr>
+          <th>
+          <CardTitle tag="h5" className="table-titulo-mor">Descarte</CardTitle> <br/>
+          </th>
+        </tr>
+
+        <tr>
+          <td>
+           <CardSubtitle tag="h6" className="table-titulo">Lixo Descartado: </CardSubtitle> 
+          </td>
+          <td>
+            <CardText className="td-resposta">Qualquer coisa.</CardText> 
+          </td>
+
+          <td>
+            <CardSubtitle tag="h6" className="table-titulo">Quantidade: </CardSubtitle> 
+          </td>
+          <td>
+            <CardText className="td-resposta">Qualquer coisa.</CardText> 
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <CardSubtitle tag="h6" className="table-titulo">Data Descarte:  </CardSubtitle> 
+          </td>
+          <td>
+            <CardText className="td-resposta">Qualquer coisa.</CardText> 
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <CardSubtitle tag="h6" className="table-titulo">Tipo do Lixo:  </CardSubtitle> 
+          </td>
+          <td>
+            <CardText className="td-resposta">Qualquer coisa.</CardText> 
+          </td>
+
+          <td>
+            <CardSubtitle tag="h6" className="table-titulo">Forma de Descarte:  </CardSubtitle> 
+          </td>
+          <td>
+            <CardText className="td-resposta">Qualquer coisa.</CardText> 
+          </td>
+        </tr>
+
+
+        <tr>
+          <td colSpan="5"></td>
+          <td>
+            <button className="btn-editar">Editar</button> 
+          </td>
+          <td>
+            <button className="btn-excluir">Excluir</button>
+          </td>
+        </tr>
+        </CardBody>
+      </Card>
+      </table>
+        
+    </div>
+  );
+};
+
+export default ListaDescarte;

@@ -9,8 +9,7 @@ import { Collapse,
     DropdownToggle,
     DropdownMenu,
     DropdownItem,
-    NavbarText,
-    UncontrolledCarousel
+    NavbarText
   } from 'reactstrap';
 
   const Menu = (props) => {
