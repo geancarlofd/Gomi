@@ -6,10 +6,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.table-titulo{
+.table-titulo-lista{
     color: #2B531A;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-left: 35px;
+    width: 190px;
 }
 
 .table-tamanho-lista-descarte {
@@ -21,6 +23,7 @@
     width: 450px;
     padding-bottom: 20px;
     padding-left: 25px;
+    font-size: 17px;
 }
 
 .btn-editar{
@@ -31,7 +34,7 @@
     height: 45px;
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-right: 5px;
+    margin-left: -120px;
 }
 
 .btn-editar:hover{
@@ -47,7 +50,7 @@
     height: 45px;
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
-
+    margin-left: -30px;
 }
 
 .btn-excluir:hover:hover{

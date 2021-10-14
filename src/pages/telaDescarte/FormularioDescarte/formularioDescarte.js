@@ -38,7 +38,7 @@ const FormularioDescarte = (props) => {
 
         <td /* Campo Data */> 
           <FormGroup row>
-              <Col sm={8}>
+              <Col sm={25}>
                 <Input type="date" name="date" placeholder="Data" />
               </Col>
             </FormGroup>
@@ -56,7 +56,7 @@ const FormularioDescarte = (props) => {
               <Col sm={30}>
                 <Input type="select" name="select" id="exampleSelect2">
                   <option id="1">Lixo Orgânico</option>
-                  <option id="lixoReciclavel" onClick="show_options">Lixo Reciclável</option>
+                  <option id="lixoReciclavel">Lixo Reciclável</option>
                 </Input>
               </Col>
             </FormGroup>
@@ -79,7 +79,7 @@ const FormularioDescarte = (props) => {
       <br/>
 
       <tr>
-        <td colSpan="5"></td>
+        <td colSpan="2"></td>
         <td /* Campo Botão Enviar */>
          <button className="btn-salvar">Salvar</button>
         </td>

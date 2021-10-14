@@ -28,23 +28,14 @@ const ListaDescarte = (props) => {
 
         <tr>
           <td>
-           <CardSubtitle tag="h6" className="table-titulo">Lixo Descartado: </CardSubtitle> 
+           <CardSubtitle tag="h6" className="table-titulo-lista">Lixo Descartado: </CardSubtitle> 
           </td>
           <td>
             <CardText className="td-resposta">Qualquer coisa.</CardText> 
           </td>
 
           <td>
-            <CardSubtitle tag="h6" className="table-titulo">Quantidade: </CardSubtitle> 
-          </td>
-          <td>
-            <CardText className="td-resposta">Qualquer coisa.</CardText> 
-          </td>
-        </tr>
-
-        <tr>
-          <td>
-            <CardSubtitle tag="h6" className="table-titulo">Data Descarte:  </CardSubtitle> 
+            <CardSubtitle tag="h6" className="table-titulo-lista">Quantidade: </CardSubtitle> 
           </td>
           <td>
             <CardText className="td-resposta">Qualquer coisa.</CardText> 
@@ -53,7 +44,16 @@ const ListaDescarte = (props) => {
 
         <tr>
           <td>
-            <CardSubtitle tag="h6" className="table-titulo">Tipo do Lixo:  </CardSubtitle> 
+            <CardSubtitle tag="h6" className="table-titulo-lista">Data Descarte:  </CardSubtitle> 
+          </td>
+          <td>
+            <CardText className="td-resposta">Qualquer coisa.</CardText> 
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <CardSubtitle tag="h6" className="table-titulo-lista">Tipo do Lixo:  </CardSubtitle> 
           </td>
 
           <td>
@@ -61,7 +61,7 @@ const ListaDescarte = (props) => {
           </td>
 
           <td>
-            <CardSubtitle tag="h6" className="table-titulo">Forma de Descarte:  </CardSubtitle> 
+            <CardSubtitle tag="h6" className="table-titulo-lista">Forma de Descarte:  </CardSubtitle> 
           </td>
           <td>
             <CardText className="td-resposta">Qualquer coisa.</CardText> 

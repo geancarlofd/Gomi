@@ -1,7 +1,11 @@
 
 body{
     margin: auto;
-    padding: 0;
 }
 
+.text-descarte {
+    text-align: center;
+    font-size: 35px;
+    color: #A89914;
+}
 
