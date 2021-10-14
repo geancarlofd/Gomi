@@ -1,9 +1,12 @@
 import React from 'react';
 import { Col, Button, Form, FormGroup, Label, Input, FormText, FormFeedback, Row, } from 'reactstrap';
+import tipoLixoDescarte from './TipoLixoDescartado/tipoLixoDescarte';
 import "./formularioDescarte.css";
 
-const FormularioDescarte = (props) => {
+tipoLixoDescarte();
 
+const FormularioDescarte = (props) => {
+  
   return (
 
     //Modal com as opções de descarte 
@@ -53,7 +56,7 @@ const FormularioDescarte = (props) => {
               <Col sm={30}>
                 <Input type="select" name="select" id="exampleSelect2">
                   <option id="1">Lixo Orgânico</option>
-                  <option id="2">Lixo Reciclável</option>
+                  <option id="lixoReciclavel" onClick="show_options">Lixo Reciclável</option>
                 </Input>
               </Col>
             </FormGroup>
@@ -76,6 +79,7 @@ const FormularioDescarte = (props) => {
       <br/>
 
       <tr>
+        <td colSpan="5"></td>
         <td /* Campo Botão Enviar */>
          <button className="btn-salvar">Salvar</button>
         </td>

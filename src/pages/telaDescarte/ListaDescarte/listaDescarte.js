@@ -1,9 +1,17 @@
 import React from 'react';
 import {
   Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button
+  CardTitle, CardSubtitle, Button, UncontrolledAlert
 } from 'reactstrap';
 import "./listaDescarte.css";
+
+function alertaExclusaoDescarte() {
+  return (
+    <UncontrolledAlert color="info">
+      ;------------------;
+    </UncontrolledAlert>
+  );
+}
 
 const ListaDescarte = (props) => {
   return (
@@ -47,6 +55,7 @@ const ListaDescarte = (props) => {
           <td>
             <CardSubtitle tag="h6" className="table-titulo">Tipo do Lixo:  </CardSubtitle> 
           </td>
+
           <td>
             <CardText className="td-resposta">Qualquer coisa.</CardText> 
           </td>
@@ -66,7 +75,7 @@ const ListaDescarte = (props) => {
             <button className="btn-editar">Editar</button> 
           </td>
           <td>
-            <button className="btn-excluir">Excluir</button>
+            <button className="btn-excluir" onSubmit={alertaExclusaoDescarte} type="submit">Excluir</button>
           </td>
         </tr>
         </CardBody>
