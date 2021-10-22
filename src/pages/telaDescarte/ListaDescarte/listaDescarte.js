@@ -10,6 +10,7 @@ function alertaExclusaoDescarte() {
     <UncontrolledAlert color="info">
       ;------------------;
     </UncontrolledAlert>
+
   );
 }
 

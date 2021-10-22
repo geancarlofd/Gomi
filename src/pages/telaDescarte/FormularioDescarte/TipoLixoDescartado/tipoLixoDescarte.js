@@ -1,8 +1,8 @@
 
-import React, { Component } from "react";
-import { Col, Button, Form, FormGroup, Label, Input, FormText, FormFeedback, Row, } from 'reactstrap';
+import React, { useEffect, useState } from "react";
+import { Col, FormGroup,  Input } from 'reactstrap';
 
-const tipoLixoDescarte = (props) => {
+const tipoReciclavelDescarte = (props) => {
     return (
         <div>
             <table>
@@ -16,7 +16,8 @@ const tipoLixoDescarte = (props) => {
                     <td>
                         <FormGroup row>
                             <Col sm={30}>
-                                <Input type="select" name="select" id="exampleSelect2">
+                                <Input type="select" name="select" id="exampleSelect2" onChange={(e) => 
+                                 { setTipoReciclavelDescarte(e.target.value) }}>
                                     <option id="1">Tipo 1</option>
                                     <option id="2">Tipo 2</option>
                                     <option id="3">Tipo 3</option>
@@ -34,4 +35,4 @@ const tipoLixoDescarte = (props) => {
 
 
 
-export default tipoLixoDescarte;
+export default tipoReciclavelDescarte;
