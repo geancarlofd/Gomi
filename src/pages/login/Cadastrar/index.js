@@ -1,55 +1,117 @@
-import React, { useEffect, useState, Component } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState} from 'react';
+import {useHistory } from 'react-router-dom';
+import '../../../rotas'
 import firebase from '../../../firebase';
 
-class Cadastrar extends Component {
+function Cadastrar() {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            nome: "",
-            sobrenome: "",
-            dataNasc: "",
-            email: "",
-            senha: "",
-            senhaConf: "",
+
+    const [nome, setNome] = useState();
+    const [sobrenome, setSobrenome] = useState();
+    const [dtaNasc, setDtaNasc] = useState();
+    const [email, setEmail] = useState();
+    const [senha, setSenha] = useState();
+    const [senhaConfirm, setSenhaConfirm] = useState();
+
+    const [mensagem, setMensagem] = useState();
+    const [mensagemIdade, setMensagemIdade] = useState();
+
+    const [redirect, setRedirect] = useState(false);
+    const history = useHistory();
+
+
+    useEffect(() => {
+        // Atualiza o titulo do documento usando a API do browser
+        document.title = `Gomi - Cadastrar`;
+
+        if(redirect) {
+            history.push('/')
         }
-        this.cadastrar = this.cadastrar.bind(this);
+    });
 
+    function MudarTela(){
+        setRedirect(true)
     }
 
-    async cadastrar(){
-        //VERIFICAR CAMPOS
-        //vERIFICAR SENHAS
-        //IF OK CADASTRAR USER
-        alert('aaaaa')
+    function verificarCampos(){
+        var vetor = [nome, sobrenome, dtaNasc, email, senha, senhaConfirm]
+
+        //Verificar Campos
+        for(var x = 0; x < vetor.length ; x++){
+            if (vetor[x] == null){
+                return false
+            }
+        }
+
+        //Verificar Senha
+        if (senha != senhaConfirm) {
+            return false
+        }
+        var date = new Date();
+        var data = dtaNasc.split("-");
+        //Verifica se o usuario tem mais de 16 anos
+        if ((date.getFullYear() - parseInt(data[0])) < 16){//calculo ano ataul - ano de nascimento user.
+            console.log("IDADE")
+            setMensagemIdade("Idade Minima 16 anos")
+            return false
+        }else{
+            setMensagemIdade("")
+        }
+        return true
     }
 
-    render(){
-        return(
-            <div>
-                <Link to='/'><button>Voltar</button></Link>
+    async function cadastrar(){
+        if(verificarCampos()){
+            let uid
+            await firebase.auth().createUserWithEmailAndPassword(email, senha).then(async (usuario) => {
+                await firebase.firestore().collection("dadosUsuario").doc(usuario.user.uid)
+                    .set({
+                        nome: nome, sobrenome:sobrenome, dtaNasc:dtaNasc,
+                    });
+            }).catch((error) => {
+                console.log("Erro: " + error);
+                if (error.code === "auth/email-already-in-use"){//Caso o email ja estiver sendo utilizado
+                    setMensagem('E-mail já cadastrado')
+                }
+                else if (error.code === "auth/weak-password") {//Caso a senha for fraca
+                    setMensagem('Senha Fraca')
+                }
+                else{
+                    setMensagem('Dados inseridos inválidos')//Mensagem padrao de erro
+                }
 
-                <div className="cadastrar-box">
-                    <p>Nome:</p>
-                    <input type="text"/>
-                    <p>Sobrenome:</p>
-                    <input type="text" />
-                    <p>Data de Nascimento:</p>
-                    <input type="Date" />
-                    <p>Email:</p>
-                    <input type="text" />
-                    <p>Senha:</p>
-                    <input type="password" />
-                    <p>Confirmar Senha:</p>
-                    <input type="password" /> <br />
+            });
+        }
+        else{
+            setMensagem('Dados inseridos inválidos')
+        }
+    }
 
-                    <button onClick={this.cadastrar}>Cadastrar</button>
-                </div>
+    return(
+        <div>
+            <button onClick={MudarTela}>Voltar</button>
 
+            <div className="cadastrar-box">
+                <p>Nome:</p>
+                <input type="text" onChange={(e) => { setNome(e.target.value) }}/>
+                <p>Sobrenome:</p>
+                <input type="text" onChange={(e) => { setSobrenome(e.target.value) }}/>
+                <p>Data de Nascimento:</p>
+                <input type="Date" onChange={(e) => { setDtaNasc(e.target.value) }}/> <p>{mensagemIdade}</p>
+                <p>Email:</p>
+                <input type="text" onChange={(e) => { setEmail(e.target.value) }}/>
+                <p>Senha:</p>
+                <input type="password" onChange={(e) => { setSenha(e.target.value) }}/>
+                <p>Confirmar Senha:</p>
+                <input type="password" onChange={(e) => { setSenhaConfirm(e.target.value) }}/> <br />
+                
+                <p>{mensagem}</p>
+
+                <button onClick={cadastrar}>Cadastrar</button>
             </div>
+
+        </div>
         )
-    }
     
 }
 
