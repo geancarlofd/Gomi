@@ -1,5 +1,5 @@
 import React, { useEffect, useState, Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import firebase from '../../firebase';
 
 
@@ -8,6 +8,9 @@ function Login(){
     const [usuario, setUsuario] = useState('');
     const [senha, setSenha] = useState('');
     const [mensagem, setMensagem] = useState('');
+
+    const [redirect, setRedirect] = useState(false);
+    const history = useHistory();
 
 
 
@@ -21,7 +24,7 @@ function Login(){
                 setMensagem('Logado')
                 setUsuario('')
                 setSenha('')
-                //Redirect to TIMELINE
+                history.push('/timeline')
             }
             else{
 

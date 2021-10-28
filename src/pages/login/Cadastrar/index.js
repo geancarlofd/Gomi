@@ -27,6 +27,12 @@ function Cadastrar() {
         if(redirect) {
             history.push('/')
         }
+
+        firebase.auth().onAuthStateChanged((user) => {
+            if(user) {
+                history.push('/timeline')
+            }
+        });
     });
 
     function MudarTela(){
