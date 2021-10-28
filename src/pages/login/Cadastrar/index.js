@@ -62,12 +62,21 @@ function Cadastrar() {
 
     async function cadastrar(){
         if(verificarCampos()){
-            let uid
+
             await firebase.auth().createUserWithEmailAndPassword(email, senha).then(async (usuario) => {
-                await firebase.firestore().collection("dadosUsuario").doc(usuario.user.uid)
-                    .set({
-                        nome: nome, sobrenome:sobrenome, dtaNasc:dtaNasc,
+                console.log('Firestore: ' + usuario.user.uid)
+                    await firebase.firestore().collection("dadosUsuario").add({
+                        nome: nome,
+                        sobrenome: sobrenome,
+                        email: email,
+                        dtaNasc: dtaNasc,
+                        amigos: []
+                    }).then((docRef) => {
+                        console.log("Document written with ID: ", docRef.id);
+                    }).catch((error) => {
+                        console.error("Error adding document: ", error);
                     });
+
             }).catch((error) => {
                 console.log("Erro: " + error);
                 if (error.code === "auth/email-already-in-use"){//Caso o email ja estiver sendo utilizado
