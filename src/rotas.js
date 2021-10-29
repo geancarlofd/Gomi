@@ -1,10 +1,9 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom"
-import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import Login from "./pages/Login"
-import Cadastrar from "./pages/Login/Cadastrar"
-import Timeline from "./pages/Timeline"
+import Login from "./pages/login"
+import Cadastrar from "./pages/login/Cadastrar"
+import Timeline from "./pages/timeline"
 import NotFound from './pages/NotFound'
 import TelaDescarte from "./pages/telaDescarte"
 import Ranking from "./pages/ranking"

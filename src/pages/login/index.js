@@ -2,10 +2,7 @@ import React, { useEffect, useState, Component } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import firebase from '../../firebase';
 import "../login/index.css";
-import {
-    Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button, UncontrolledAlert
-  } from 'reactstrap';
+import { Card,  CardBody, CardTitle, Button } from 'reactstrap';
 
 function Login(){
 
@@ -66,24 +63,24 @@ function Login(){
 
 
     return (
-        <div className="card">
+        <div className="card-login">
             <Card>
                 <CardBody >
 
                     <div className="login-box">
                         <CardTitle className="text-login"><u>Login:</u></CardTitle>
-                        <input className="input" type="Text" placeholder="Usuário" onChange={(e) => { setUsuario(e.target.value) }} /><br />
+                        <input className="input-login" type="Text" placeholder="Usuário" onChange={(e) => { setUsuario(e.target.value) }} /><br />
 
                        {/* <CardTitle className="text-login">Senha:</CardTitle> */}
-                        <input className="input" type="password" placeholder="Senha" onChange={(e) => { setSenha(e.target.value) }} /><br />
+                        <input className="input-login" type="password" placeholder="Senha" onChange={(e) => { setSenha(e.target.value) }} /><br />
                         
                         <CardTitle className="text-login">{mensagem}</CardTitle>
 
 
-                        <table className="btns">
-                            <tr> <Button className="btn-entrar" onClick={entrar}> Entrar</Button><br /></tr>
-                            <tr> <Button className="btn-sair" onClick={sair}>Sair </Button><br /></tr>
-                            <tr> <Button className="btn-cadastrar"> <Link to='/cadastrar'>Cadastrar </Link></Button><br /></tr>
+                        <table className="btns-login">
+                            <tr> <Button className="btn-entrar-login" onClick={entrar}> Entrar</Button><br /></tr>
+                            <tr> <Button className="btn-sair-login" onClick={sair}>Sair </Button><br /></tr>
+                            <tr> <Button className="btn-cadastrar-login"> <Link to='/cadastrar'>Cadastrar </Link></Button><br /></tr>
                         </table>
                     </div>
                 </CardBody>
