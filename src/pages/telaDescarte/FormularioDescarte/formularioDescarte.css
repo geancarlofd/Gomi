@@ -1,0 +1,29 @@
+/* Texto da página de Descarte */
+
+.table-titulo{
+    color: #2B531A;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.table-tamanho {
+    width: 75%;
+    margin-left: 13%;
+}
+
+.btn-salvar{
+    color: white;
+    background-color: #2B531A;
+    border: none;
+    width: 80px;
+    height: 45px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    right: -280px;
+}
+
+.btn-salvar:hover{
+    cursor: pointer;
+    background-color: #558541;
+}

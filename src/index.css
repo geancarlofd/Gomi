@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* CSS do Cabecalho */
+.menu-cabecalho{
+  background-color: #577848;
+  color: #A89914;
+  font-size: 25px;
+  margin-top: -190px;
+  margin-left: 35%;
+}
+
+/* CSS da parte de trás do cabeçalho */
+.bcg-cabecalho{
+  margin-top: -180px;
+  background-color: #577848;
+}
+
+/* CSS imagem do Gomi */
+.imgGomi {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+}
+
+/* CSS do nome do Gomi */
+.imgGomiNome {
+  margin-top: 200px;
+  margin-left: -100px;
+  width: 300px;
+  height: 250px;
+}
