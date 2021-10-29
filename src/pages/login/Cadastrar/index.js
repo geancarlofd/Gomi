@@ -2,7 +2,6 @@ import React, { useEffect, useState} from 'react';
 import {useHistory } from 'react-router-dom';
 import '../../../rotas'
 import firebase from '../../../firebase';
-import './cadastrar.css';
 
 function Cadastrar() {
 

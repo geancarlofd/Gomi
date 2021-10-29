@@ -1,0 +1,86 @@
+body {
+    margin: auto;
+}
+
+.text-login{
+    color: #A89914;
+    font-size: 35px;
+    padding-top: 15px;
+    margin-left: -170px;
+    margin-bottom: 25px;
+}
+
+.card{
+    text-align: center;
+    margin-top: 15%;
+}
+
+.input{
+    width: 270px;
+    height: 40px;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+/* Botões*/
+
+.btns{
+    margin-top: -25px;
+    margin-left: 44.5%;
+}
+
+.btn-entrar{
+    color: white;
+    background-color: #2B531A;
+    border: none;
+    width: 270px;
+    height: 40px;
+    border-radius: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: -30px;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.btn-entrar:hover:hover{
+    cursor: pointer;
+    background-color: #346b1c;
+}
+
+.btn-sair{
+    color: white;
+    background-color: #85290d;
+    border: none;
+    width: 270px;
+    height: 40px;
+    border-radius: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: -30px;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.btn-sair:hover:hover{
+    cursor: pointer;
+    background-color: #a04529;
+}
+
+.btn-cadastrar{
+    color: white;
+    background-color: #A89914;
+    border: none;
+    width: 270px;
+    height: 40px;
+    border-radius: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: -120px;
+    font-size: 14px;
+    margin-left: -25px;
+}
+
+.btn-cadastrar:hover{
+    cursor: pointer;
+    background-color: #c5b41a;
+}

@@ -1,7 +1,11 @@
 import React, { useEffect, useState, Component } from 'react';
 import { Link } from 'react-router-dom';
 import firebase from '../../firebase';
-
+import "../login/index.css";
+import {
+    Card, CardImg, CardText, CardBody,
+    CardTitle, CardSubtitle, Button, UncontrolledAlert
+  } from 'reactstrap';
 
 function Login(){
 
@@ -59,19 +63,30 @@ function Login(){
 
 
     return (
-        <div>
-            <div className="login-box">
-                <p>Usuário:</p>
-                <input type="Text" placeholder="Usuário" onChange={(e) => { setUsuario(e.target.value) }} /><br />
-                <p>Senha:</p>
-                <input type="password" placeholder="Senha" onChange={(e) => { setSenha(e.target.value) }} /><br />
-                <p>{mensagem}</p>
+        <div className="card">
+            <Card>
+                <CardBody >
 
-                <button onClick={entrar}>Entrar</button> <br />
-                <button onClick={sair}>Sair</button> <br />
-                <Link to='/cadastrar'><button>Cadastrar</button> <br /></Link>
-            </div>
+                    <div className="login-box">
+                        <CardTitle className="text-login"><u>Login:</u></CardTitle>
+                        <input className="input" type="Text" placeholder="Usuário" onChange={(e) => { setUsuario(e.target.value) }} /><br />
+
+                       {/* <CardTitle className="text-login">Senha:</CardTitle> */}
+                        <input className="input" type="password" placeholder="Senha" onChange={(e) => { setSenha(e.target.value) }} /><br />
+                        
+                        <CardTitle className="text-login">{mensagem}</CardTitle>
+
+
+                        <table className="btns">
+                            <tr> <Button className="btn-entrar" onClick={entrar}> Entrar</Button><br /></tr>
+                            <tr> <Button className="btn-sair" onClick={sair}>Sair </Button><br /></tr>
+                            <tr> <Button className="btn-cadastrar"> <Link to='/cadastrar'>Cadastrar </Link></Button><br /></tr>
+                        </table>
+                    </div>
+                </CardBody>
+            </Card>
         </div>
+        
     )
 }
 

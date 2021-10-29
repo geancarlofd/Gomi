@@ -1,4 +1,4 @@
-
+import React from 'react';
 import Rotas from './rotas';
 
 function App() {

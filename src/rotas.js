@@ -1,7 +1,8 @@
+import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom"
 
-import Login from "./pages/Login"
-import Cadastrar from "./pages/Login/Cadastrar"
+import Login from "./pages/login"
+import Cadastrar from "./pages/login/Cadastrar"
 import NotFound from './pages/NotFound'
 
 const Rotas = () => {
