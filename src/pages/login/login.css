@@ -2,7 +2,7 @@ body {
     margin: auto;
 }
 
-.text-login{
+.text-login {
     color: #A89914;
     font-size: 35px;
     padding-top: 15px;
@@ -10,12 +10,12 @@ body {
     margin-bottom: 25px;
 }
 
-.card-login{
+.card-login {
     text-align: center;
     margin-top: 15%;
 }
 
-.input-login{
+.input-login {
     width: 270px;
     height: 40px;
     border-radius: 25px;
@@ -26,14 +26,14 @@ body {
 
 /* Botões*/
 
-.btns-login{
+.btns-login {
     margin-top: -25px;
     margin-left: 44.5%;
 }
 
-.btn-entrar-login{
+.btn-entrar-login {
     color: white;
-    background-color: #2B531A;
+    background: #2B531A;
     border: none;
     width: 270px;
     height: 40px;
@@ -44,14 +44,14 @@ body {
     margin-bottom: 10px;
 }
 
-.btn-entrar-login:hover:hover{
+.btn-entrar-login:hover:hover {
     cursor: pointer;
-    background-color: #346b1c;
+    background: #346b1c;
 }
 
-.btn-sair-login{
+.btn-sair-login {
     color: white;
-    background-color: #85290d;
+    background: #85290d;
     border: none;
     width: 270px;
     height: 40px;
@@ -62,14 +62,14 @@ body {
     margin-bottom: 10px;
 }
 
-.btn-sair-login:hover:hover{
+.btn-sair-login:hover:hover {
     cursor: pointer;
-    background-color: #a04529;
+    background: #a04529;
 }
 
-.btn-cadastrar-login{
+.btn-cadastrar-login {
     color: white;
-    background-color: #A89914;
+    background: #A89914;
     border: none;
     width: 270px;
     height: 40px;
@@ -80,7 +80,7 @@ body {
     margin-left: -25px;
 }
 
-.btn-cadastrar-login:hover:hover{
+.btn-cadastrar-login:hover:hover {
     cursor: pointer;
-    background-color: #c5b41a;
+    background: #c5b41a;
 }

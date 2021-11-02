@@ -1,0 +1,10 @@
+.box-novaPostagem {
+    margin: 0 auto;
+    border: none;
+    border-radius: 3px;
+    width: 60%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    background: #08080810;
+    text-align: center;
+}

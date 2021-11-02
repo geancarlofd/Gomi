@@ -2,6 +2,11 @@ import React, { useEffect, useState, Component } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import firebase from '../../firebase';
 
+import Postagem from '../timeline/Postagem/index.js';
+
+import NovaPostagem from '../timeline/NovaPostagem/index.js';
+
+
 
 function Timeline() {
     const history = useHistory();
@@ -21,6 +26,7 @@ function Timeline() {
             }
         });
     });
+
     async function sair() {
         await firebase.auth().signOut();
         setRedirectSair(true)
@@ -28,7 +34,14 @@ function Timeline() {
 
     return (
         <div>
-            timelineeeeee
+            <NovaPostagem />
+
+
+            <Postagem />
+            <Postagem />
+            <Postagem />
+            <Postagem />
+            <Postagem />
             <button onClick={sair}>Sair</button> <br />
         </div>
     )
