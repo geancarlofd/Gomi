@@ -1,7 +1,7 @@
 import React, { useEffect, useState, Component } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import firebase from '../../firebase';
-import "../login/index.css";
+import "./login.css";
 import { Card,  CardBody, CardTitle, Button } from 'reactstrap';
 
 function Login(){
@@ -78,9 +78,9 @@ function Login(){
 
 
                         <table className="btns-login">
-                            <tr> <Button className="btn-entrar-login" onClick={entrar}> Entrar</Button><br /></tr>
-                            <tr> <Button className="btn-sair-login" onClick={sair}>Sair </Button><br /></tr>
-                            <tr> <Button className="btn-cadastrar-login"> <Link to='/cadastrar'>Cadastrar </Link></Button><br /></tr>
+                            <tr> <button className="btn-entrar-login" onClick={entrar}> Entrar</button><br /></tr>
+                            {/* <tr> <button className="btn-sair-login" onClick={sair}>Sair </button><br /></tr> */}
+                            <tr> <button className="btn-cadastrar-login"> <Link to='/cadastrar'>Cadastrar </Link></button><br /></tr>
                         </table>
                     </div>
                 </CardBody>

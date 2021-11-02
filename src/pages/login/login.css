@@ -18,10 +18,11 @@ body {
 .input-login{
     width: 270px;
     height: 40px;
-    border-radius: 25px;
+    border-radius: 23px;
     margin-top: 10px;
     margin-bottom: 15px;
     font-size: 18px;
+    padding: 13px;
 }
 
 /* Botões*/
