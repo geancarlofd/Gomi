@@ -3,11 +3,18 @@ body {
 }
 
 .text-login{
-    color: #A89914;
+    color: #703131;
     font-size: 35px;
     padding-top: 15px;
     margin-left: -170px;
     margin-bottom: 25px;
+}
+
+.text-login-error{
+    color: #85290d;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 25px;
 }
 
 .card-login{
@@ -18,6 +25,7 @@ body {
 .input-login{
     width: 270px;
     height: 40px;
+    border: solid 1px #626362;
     border-radius: 23px;
     margin-top: 10px;
     margin-bottom: 15px;
@@ -50,7 +58,7 @@ body {
     background-color: #346b1c;
 }
 
-.btn-sair-login{
+/* .btn-sair-login{
     color: white;
     background-color: #85290d;
     border: none;
@@ -66,7 +74,7 @@ body {
 .btn-sair-login:hover:hover{
     cursor: pointer;
     background-color: #a04529;
-}
+} */
 
 .btn-cadastrar-login{
     color: white;

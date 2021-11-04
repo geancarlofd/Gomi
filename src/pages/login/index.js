@@ -68,19 +68,19 @@ function Login(){
                 <CardBody >
 
                     <div className="login-box">
-                        <CardTitle className="text-login"><u>Login:</u></CardTitle>
+                        <CardTitle className="text-login">Login:</CardTitle>
                         <input className="input-login" type="Text" placeholder="Usuário" onChange={(e) => { setUsuario(e.target.value) }} /><br />
 
                        {/* <CardTitle className="text-login">Senha:</CardTitle> */}
                         <input className="input-login" type="password" placeholder="Senha" onChange={(e) => { setSenha(e.target.value) }} /><br />
                         
-                        <CardTitle className="text-login">{mensagem}</CardTitle>
+                        <CardTitle className="text-login-error">{mensagem}</CardTitle>
 
 
                         <table className="btns-login">
                             <tr> <button className="btn-entrar-login" onClick={entrar}> Entrar</button><br /></tr>
                             {/* <tr> <button className="btn-sair-login" onClick={sair}>Sair </button><br /></tr> */}
-                            <tr> <button className="btn-cadastrar-login"> <Link to='/cadastrar'>Cadastrar </Link></button><br /></tr>
+                            <tr><Link to='/cadastrar'><button className="btn-cadastrar-login">Cadastrar </button> </Link><br /></tr>
                         </table>
                     </div>
                 </CardBody>
