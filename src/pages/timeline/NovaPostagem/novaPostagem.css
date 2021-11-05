@@ -8,3 +8,48 @@
     background: #08080810;
     text-align: center;
 }
+
+td{
+    width:50%;
+}
+
+.td-titulo{
+    text-align: left;
+}
+
+.td-btnPostar{
+    text-align:right;
+}
+
+.label-titulo{
+    margin-left: 20px;
+    margin-top:8px;
+    margin-bottom:1.8px;
+}
+
+.textArea-corpoPost{
+    width:90%;
+    height:100px;
+    margin-top:7px;
+}
+
+.btn-postar{
+    width:40%;
+    height:45px;
+    margin-right:10%;
+    margin-bottom:10px;
+    border:none;
+    border-radius:3px;
+    color: white;
+    background-color: #2B531A;
+}
+
+.btn-postar:hover {
+    cursor: pointer;
+    background-color: #558541;
+}
+
+
+.inpt-arquivoPost{
+    width:90%;
+}

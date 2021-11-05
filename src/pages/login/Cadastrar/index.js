@@ -83,6 +83,23 @@ function Cadastrar() {
                         console.error("Error adding document: ", error);
                     });
 
+                    await firebase.auth().signInWithEmailAndPassword(email, senha).then((auth) => {
+                        console.log(auth)
+                        const userLogado = firebase.auth().currentUser;
+
+                        userLogado.updateProfile({
+                            displayName: nome+" "+sobrenome,
+                        }).then((updateProfile) => {
+                            console.log(updateProfile)
+                        }).catch((error) => {
+                            console.log('Error:'+ error)
+                        });
+
+                }).catch((error) => {
+                    console.log("Erro: " + error);
+                    setMensagem('Usuário ou senha inválidos')
+                });
+
             }).catch((error) => {
                 console.log("Erro: " + error);
                 if (error.code === "auth/email-already-in-use"){//Caso o email ja estiver sendo utilizado
