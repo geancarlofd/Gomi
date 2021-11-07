@@ -37,7 +37,7 @@ class App extends Component {
                       <p className="title-column-ranking">Posição</p>
                       <p className="first-position-ranking">1º</p>
                       <p className="second-position-ranking">2º</p>
-                      <p className="third-position-ranking">3º</p>
+                      <p className="third-position-ranking">3º </p>
                       <p>4º</p>
                       <p>6º</p>
                       <p>7º</p>
