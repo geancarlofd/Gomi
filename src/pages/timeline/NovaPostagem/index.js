@@ -13,13 +13,13 @@ const NovaPostagem = (props) => {
 
     function DataHora(){
         var datahora = new Date();
-        var data = datahora.getHours() + ":" + datahora.getMinutes() + "   " + datahora.getDay() + "/" + (datahora.getMonth()+1)+"/"+datahora.getFullYear();
-        console.log(data);
-        setDataHoraAtual(data)
+        var data = datahora.getHours() + ":" + datahora.getMinutes() + "   " + datahora.getDate() + "/" + (datahora.getMonth()+1)+"/"+datahora.getFullYear();
+        console.log(data)
+        return data;
     }
 
     function validarCampos(){
-        if (corpoTexto == null || corpoTexto == " "){
+        if (corpoTexto == null || corpoTexto == ""){
             return false
         }
         return true
@@ -33,7 +33,7 @@ const NovaPostagem = (props) => {
                 nome: props.nome,
                 corpoTexto: corpoTexto,
                 flg_img: 0,
-                dataHora: dataHoraAtual,
+                dataHora: DataHora(),
                 curtidas: 0
                 //colocar comentarios
             }).then((docRef) => {
