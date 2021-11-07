@@ -1,0 +1,76 @@
+
+/* Coluna de cadastro */
+.card-cadastrar{
+    text-align: center;
+    margin-top: 3%;
+}
+
+/* Textos campos cadastros */
+.text-cadastrar{
+    color: #703131;
+    font-size: 20px;
+    padding-top: 15px;
+    margin-left: -190px;
+    margin-bottom: 10px;
+}
+
+.text-cadastrar-lastname{
+    color: #703131;
+    font-size: 20px;
+    padding-top: 15px;
+    margin-left: -150px;
+    margin-bottom: 10px;
+}
+
+.text-cadastrar-birthday{
+    color: #703131;
+    font-size: 20px;
+    padding-top: 15px;
+    margin-left: -70px;
+    margin-bottom: 10px;
+}
+
+.text-cadastrar-confirm-password{
+    color: #703131;
+    font-size: 20px;
+    padding-top: 15px;
+    margin-left: -90px;
+    margin-bottom: 10px;
+}
+
+/* Inputs dos dados */
+.input-cadastrar{
+    width: 270px;
+    height: 40px;
+    border: solid 1px #626362;
+    border-radius: 23px;
+    margin-bottom: -6px;
+    font-size: 18px;
+    padding: 13px;
+}
+
+/* CSS da imagem */
+.seta{
+    transform: rotate(90deg);
+    width: 35px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/* Botões */
+.btn-cadastrar-cadastrar{
+    color: white;
+    background-color: #2B531A;
+    border: none;
+    width: 270px;
+    height: 40px;
+    border-radius: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.btn-cadastrar-cadastrar:hover:hover{
+    cursor: pointer;
+    background-color: #346b1c;
+}

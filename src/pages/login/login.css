@@ -2,6 +2,13 @@ body {
     margin: auto;
 }
 
+/* Coluna de login */
+.card-login{
+    text-align: center;
+    margin-top: 15%;
+}
+
+/* Textos dos campos login */
 .text-login{
     color: #703131;
     font-size: 35px;
@@ -17,11 +24,7 @@ body {
     padding-bottom: 25px;
 }
 
-.card-login{
-    text-align: center;
-    margin-top: 15%;
-}
-
+/* Inputs dos dados */
 .input-login{
     width: 270px;
     height: 40px;
@@ -34,10 +37,9 @@ body {
 }
 
 /* Botões*/
-
 .btns-login{
     margin-top: -25px;
-    margin-left: 44.5%;
+    margin-left: 810px;
 }
 
 .btn-entrar-login{
@@ -48,7 +50,6 @@ body {
     height: 40px;
     border-radius: 25px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: -30px;
     font-size: 17px;
     margin-bottom: 10px;
 }
@@ -84,9 +85,7 @@ body {
     height: 40px;
     border-radius: 25px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: -120px;
     font-size: 14px;
-    margin-left: -25px;
 }
 
 .btn-cadastrar-login:hover:hover{

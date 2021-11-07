@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import gomi from "../../assets/telaDescarte/gomi.png"
-import gomiNome from "../../assets/telaDescarte/gomiNome.png"
-import ranking from "../../assets/ranking/ranking.png"
+import gomi from "../../assets/telaDescarte/gomi.png";
+import gomiNome from "../../assets/telaDescarte/gomiNome.png";
 import Menu from './headersRanking.js';
 import './ranking.css';
 class App extends Component {

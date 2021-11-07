@@ -4,13 +4,7 @@ import { Collapse,
     NavbarToggler,
     Nav,
     NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-    NavbarText,
-    UncontrolledCarousel
+    NavLink
   } from 'reactstrap';
 
   const Menu = (props) => {
@@ -27,36 +21,25 @@ import { Collapse,
   
             <Nav className="mr-auto" navbar>
               <NavItem>
-                <NavLink href="/Descarte">Descarte</NavLink>
+                <NavLink href="/timeline">Timeline</NavLink>
               </NavItem> &nbsp; &nbsp; &nbsp;
   
               <NavItem>
-                <NavLink href="https://github.com/geancarlofd/Gomi">GitHub</NavLink> 
-              </NavItem>
-            </Nav> &nbsp; &nbsp; &nbsp;
-  
-            <NavbarText>Simple Text</NavbarText> &nbsp; &nbsp; &nbsp;
+                <NavLink href="/Descarte">Descarte</NavLink>
+              </NavItem>&nbsp; &nbsp; &nbsp;
 
-            <Nav navbar>
-              <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle nav caret>
-                    Options
-                  </DropdownToggle>
-                  <DropdownMenu right>
-                    <DropdownItem>
-                      Option 1
-                    </DropdownItem>
-                    <DropdownItem>
-                      Option 2
-                    </DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem>
-                      Reset
-                    </DropdownItem>
-                  </DropdownMenu>
-                </UncontrolledDropdown>
-            </Nav>
-            
+              <NavItem>
+                <NavLink href="/ranking">Ranking</NavLink>
+              </NavItem>&nbsp; &nbsp; &nbsp;
+
+              <NavItem>
+                <NavLink href="/">Perfil</NavLink>
+              </NavItem>&nbsp; &nbsp; &nbsp;
+
+              <NavItem>
+                <NavLink href="/">Sair</NavLink>
+              </NavItem>&nbsp; &nbsp; &nbsp;
+            </Nav> &nbsp; &nbsp; &nbsp;
 
           </Collapse>
         </Navbar>

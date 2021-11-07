@@ -17,7 +17,7 @@ const Rotas = () => {
                 <Route exact={true} path="/login" component={Login} />
                 <Route exact={true} path="/cadastrar" component={Cadastrar}/>
                 <Route exact={true} path="/timeline" component={Timeline} />
-                <Route exact={true} path="/Descarte" component={TelaDescarte}/>
+                <Route exact={true} path="/descarte" component={TelaDescarte}/>
                 <Route exact={true} path="/Ranking" component={Ranking}/>
                 <Route path="*" component={NotFound} />
             </Switch>
