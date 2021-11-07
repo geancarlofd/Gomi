@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import gomi from "../../assets/telaDescarte/gomi.png";
 import gomiNome from "../../assets/telaDescarte/gomiNome.png";
-import Menu from './headersRanking.js';
+import Menu from './HeadersRaking/headersRanking.js';
 import './ranking.css';
 class App extends Component {
 
@@ -18,7 +18,6 @@ class App extends Component {
   render() {
     return (
       <div>
-        
           <div className="body">
             <div className="bcg-cabecalho">
               <img className="imgGomi" src={gomi}></img>

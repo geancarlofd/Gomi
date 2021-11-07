@@ -5,7 +5,7 @@ body {
 /* Coluna de login */
 .card-login{
     text-align: center;
-    margin-top: 15%;
+    margin-top: 12%;
 }
 
 /* Textos dos campos login */
@@ -30,18 +30,12 @@ body {
     height: 40px;
     border: solid 1px #626362;
     border-radius: 23px;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: 7px;
     font-size: 18px;
     padding: 13px;
 }
 
 /* Botões*/
-.btns-login{
-    margin-top: -25px;
-    margin-left: 810px;
-}
-
 .btn-entrar-login{
     color: white;
     background-color: #2B531A;

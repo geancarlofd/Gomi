@@ -7,6 +7,7 @@ import Timeline from "./pages/timeline"
 import NotFound from './pages/NotFound'
 import TelaDescarte from "./pages/telaDescarte"
 import Ranking from "./pages/ranking"
+import Perfil from "./pages/perfil"
 
 const Rotas = () => {
 
@@ -19,6 +20,7 @@ const Rotas = () => {
                 <Route exact={true} path="/timeline" component={Timeline} />
                 <Route exact={true} path="/descarte" component={TelaDescarte}/>
                 <Route exact={true} path="/Ranking" component={Ranking}/>
+                <Route exact={true} path="/perfil" component={Perfil}/>
                 <Route path="*" component={NotFound} />
             </Switch>
         </BrowserRouter>

@@ -71,7 +71,7 @@ const ListaDescarte = (props) => {
 
 
         <tr>
-          <td colSpan="5"></td>
+          <td colSpan="4"></td>
           <td>
             <button className="btn-editar">Editar</button> 
           </td>

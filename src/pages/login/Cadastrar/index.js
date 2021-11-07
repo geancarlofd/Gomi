@@ -128,10 +128,8 @@ function Cadastrar() {
 
                 <button className="btn-cadastrar-cadastrar" onClick={cadastrar}>Cadastrar</button>
             </div>
-
         </div>
-        )
-    
+    )
 }
 
 

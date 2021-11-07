@@ -34,7 +34,7 @@ const Menu = (props) => {
             </NavItem>&nbsp; &nbsp; &nbsp;
 
             <NavItem>
-              <NavLink href="/">Perfil</NavLink>
+              <NavLink href="/perfil">Perfil</NavLink>
             </NavItem>&nbsp; &nbsp; &nbsp;
 
             <NavItem>

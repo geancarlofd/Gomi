@@ -63,28 +63,18 @@ function Login(){
 
 
     return (
-        <div className="card-login">
-            <Card>
-                <CardBody >
-
-                    <div className="login-box">
-                        <CardTitle className="text-login">Login:</CardTitle>
-                        <input className="input-login" type="Text" placeholder="Usuário" onChange={(e) => { setUsuario(e.target.value) }} /><br />
-
-                       {/* <CardTitle className="text-login">Senha:</CardTitle> */}
-                        <input className="input-login" type="password" placeholder="Senha" onChange={(e) => { setSenha(e.target.value) }} /><br />
-                        
-                        <CardTitle className="text-login-error">{mensagem}</CardTitle>
-
-
-                        <table className="btns-login">
-                            <tr> <button className="btn-entrar-login" onClick={entrar}> Entrar</button><br /></tr>
-                            {/* <tr> <button className="btn-sair-login" onClick={sair}>Sair </button><br /></tr> */}
-                            <tr><Link to='/cadastrar'><button className="btn-cadastrar-login">Cadastrar </button> </Link><br /></tr>
-                        </table>
-                    </div>
-                </CardBody>
-            </Card>
+        <div>
+            <div className="card-login">
+                <div className="login-box">
+                    <p className="text-login">Login:</p>
+                    <input className="input-login" type="Text" placeholder="Usuário" onChange={(e) => { setUsuario(e.target.value) }} /><br />
+                    <input className="input-login" type="password" placeholder="Senha" onChange={(e) => { setSenha(e.target.value) }} /><br />
+                    <p className="text-login-error">{mensagem}</p>
+                    <button className="btn-entrar-login" onClick={entrar}> Entrar</button><br />
+                        {/*  <button className="btn-sair-login" onClick={sair}>Sair </button><br /> */}
+                    <Link to='/cadastrar'><button className="btn-cadastrar-login">Cadastrar </button> </Link><br />
+                </div>
+            </div>
         </div>
         
     )
