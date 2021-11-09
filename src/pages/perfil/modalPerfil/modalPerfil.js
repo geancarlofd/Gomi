@@ -1,34 +1,48 @@
-import React, { useEffect, useState, Component } from 'react';
+import React from 'react';
+import {Link } from 'react-router-dom';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {
-	Button, Modal, ModalFooter,
-	ModalHeader, ModalBody
-} from "reactstrap"
+import './modalPerfil.css';
+import '../../../rotas';
+
+import gomi from "../../../assets/telaDescarte/gomi.png";
+import gomiNome from "../../../assets/telaDescarte/gomiNome.png";
+import seta from "../../../assets/cadastrar/seta.png";
+import Menu from "../HeadersPerfil/headersPerfil.js";
 
 function ModalPerfil() {
 
-	// Modal open state
-	const[modal, setModal] = useState(false)
-
-	// Toggle for Modal
-	const toggle = () => setModal(!modal);
-
 	return (
-		<div style={{
-			display: 'block', width: 700, padding: 30
-		}}>
-			<h4>Meus Amigos</h4>
-			<Modal isOpen={modal} toggle={toggle}>
-				<ModalHeader
-					toggle={toggle}>Sample Modal Title</ModalHeader>
-				<ModalBody>
-					Testando 1.. 2
-				</ModalBody>
-				<ModalFooter>
-					<Button color="primary" onClick={toggle}>Fechar</Button>
-				</ModalFooter>
-			</Modal>
-		</div >
+		<div>
+			<div className="body">
+				<div className="bcg-cabecalho">
+					<img className="imgGomi" src={gomi}></img>
+					<img className="imgGomiNome" src={gomiNome}></img>
+					<Menu />
+				</div>
+			
+			<Link to="/perfil"><img className="seta" src={seta}></img></Link>
+			<div>
+				<table className="table-tamanho-perfil-modal">
+					<tr>
+						<th>
+							Lista Amigos
+						</th>
+					</tr>
+
+					<tr>
+						<td>
+							<img className="imgGomi" src={gomi}></img>
+						</td>
+						<td>
+							Lixin
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			</div>
+		</div>
 	);
 }
 

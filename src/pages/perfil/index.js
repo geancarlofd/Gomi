@@ -1,54 +1,19 @@
 import React, { Component, useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 import gomi from "../../assets/telaDescarte/gomi.png";
 import gomiNome from "../../assets/telaDescarte/gomiNome.png";
 import fotoPerfil from "../../assets/perfil/gisele.jpg";
 import Menu from './HeadersPerfil/headersPerfil.js';
-import modalPerfil from './modalPerfil/modalPerfil';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {
-	Button, Modal, ModalFooter,
-	ModalHeader, ModalBody
-} from "reactstrap";
-
 import './perfil.css';
-
-import { Link } from 'react-router-dom';
 
 function Perfil() {
 
     useEffect(() => {
       document.title = 'Perfil'})
-
       
-        // Modal open state
-        const[modal, setModal] = useState(false)
-      
-        // Toggle for Modal
-        const toggle = () => setModal(!modal);
-      
-
-      function ModalPerfil() {
-        console.log("Abc")
-        return (
-          <div style={{
-            display: 'block', width: 700, padding: 30
-          }}>
-            <h4>Meus Amigos</h4>
-            <Modal isOpen={modal} toggle={toggle}>
-              <ModalHeader
-                toggle={toggle}>Sample Modal Title</ModalHeader>
-              <ModalBody>
-                Testando 1.. 2
-              </ModalBody>
-              <ModalFooter>
-                <Button color="primary" onClick={toggle}>Fechar</Button>
-              </ModalFooter>
-            </Modal>
-          </div >
-        );
-      }
-
     return (
       <div>
         <div className="body">
@@ -104,7 +69,7 @@ function Perfil() {
                   <p className="text-dados-perfil">Amigos:</p> 
                 </td>
                 <td>
-                  <button className="text-dados-perfil-resposta-amigos" onClick={ModalPerfil}>Mais amigos</button>
+                  <Link to='/modalPerfil'><button className="text-dados-perfil-resposta-amigos">Mais Amigos</button></Link>
                 </td>
               </tr>
             </table>
