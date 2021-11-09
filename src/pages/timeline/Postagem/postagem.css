@@ -5,6 +5,7 @@
     width:60%;
     margin-top:15px;
     margin-bottom:5px;
+    padding-bottom:10px;
     background: #08080810;
 }
 
@@ -26,6 +27,10 @@ td{
     text-align:justify;
 }
 
+.tr-CurtidasCom{
+    margin-bottom: 25px;
+}
+
 .p-DataHora {
     margin-right: 10px;
     margin-top: 10px;
@@ -41,7 +46,8 @@ td{
 }
 
 .imgPost {
-    width: 60%;
+    width: 40%;
     margin-bottom: 15px;
+    border-radius:2px;
 }
 
