@@ -1,0 +1,50 @@
+
+/* Text do nome da lista de amigos */
+.text-amigos-modal {
+    font-size: 30px;
+    padding-top: 10px;
+    padding-left: 35%;
+    margin-bottom: -20px;
+}
+
+.text-lista-amigos-modal {
+    padding-right: 160px;
+    font-size: 23.5px;
+    padding-left: 8px;
+}
+
+/* Tamanho da table */
+.table-tamanho-perfil-modal {
+    margin-top: 3%;
+    width: 550px;
+    margin-left: 35%;
+    border: solid 1px #000;
+    margin-bottom: -55.7px;
+}
+
+/* CSS da imagem */
+.imgPerfil {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 60px;
+  }
+
+/* Botão */
+.btn-exluir-modal-amigos{
+    color: white;
+    background-color: #85290d;
+    border: none;
+    width: 60px;
+    height: 40px;
+    border-radius: 25px;
+    margin-right: 8px;
+    font-size: 15px;
+}
+
+.btn-exluir-modal-amigos:hover:hover{
+    cursor: pointer;
+    background-color: #ff440c;
+}

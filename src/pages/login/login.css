@@ -2,29 +2,54 @@ body {
     margin: auto;
 }
 
+<<<<<<< HEAD:src/pages/login/login.css
 .text-login {
     color: #A89914;
+=======
+/* Coluna de login */
+.card-login{
+    text-align: center;
+    margin-top: 12%;
+}
+
+/* Textos dos campos login */
+.text-login{
+    color: #703131;
+>>>>>>> 39197e6a84a838daba84e29a41fd2685209f21ea:src/pages/login/index.css
     font-size: 35px;
     padding-top: 15px;
     margin-left: -170px;
     margin-bottom: 25px;
 }
 
+<<<<<<< HEAD:src/pages/login/login.css
 .card-login {
+=======
+.text-login-error{
+    color: #85290d;
+    font-size: 20px;
+>>>>>>> 39197e6a84a838daba84e29a41fd2685209f21ea:src/pages/login/index.css
     text-align: center;
-    margin-top: 15%;
+    padding-bottom: 25px;
 }
 
+<<<<<<< HEAD:src/pages/login/login.css
 .input-login {
+=======
+/* Inputs dos dados */
+.input-login{
+>>>>>>> 39197e6a84a838daba84e29a41fd2685209f21ea:src/pages/login/index.css
     width: 270px;
     height: 40px;
-    border-radius: 25px;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    border: solid 1px #626362;
+    border-radius: 23px;
+    margin-top: 7px;
     font-size: 18px;
+    padding: 13px;
 }
 
 /* Botões*/
+<<<<<<< HEAD:src/pages/login/login.css
 
 .btns-login {
     margin-top: -25px;
@@ -32,6 +57,9 @@ body {
 }
 
 .btn-entrar-login {
+=======
+.btn-entrar-login{
+>>>>>>> 39197e6a84a838daba84e29a41fd2685209f21ea:src/pages/login/index.css
     color: white;
     background: #2B531A;
     border: none;
@@ -39,7 +67,6 @@ body {
     height: 40px;
     border-radius: 25px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: -30px;
     font-size: 17px;
     margin-bottom: 10px;
 }
@@ -49,7 +76,11 @@ body {
     background: #346b1c;
 }
 
+<<<<<<< HEAD:src/pages/login/login.css
 .btn-sair-login {
+=======
+/* .btn-sair-login{
+>>>>>>> 39197e6a84a838daba84e29a41fd2685209f21ea:src/pages/login/index.css
     color: white;
     background: #85290d;
     border: none;
@@ -64,8 +95,13 @@ body {
 
 .btn-sair-login:hover:hover {
     cursor: pointer;
+<<<<<<< HEAD:src/pages/login/login.css
     background: #a04529;
 }
+=======
+    background-color: #a04529;
+} */
+>>>>>>> 39197e6a84a838daba84e29a41fd2685209f21ea:src/pages/login/index.css
 
 .btn-cadastrar-login {
     color: white;
@@ -75,9 +111,7 @@ body {
     height: 40px;
     border-radius: 25px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: -120px;
     font-size: 14px;
-    margin-left: -25px;
 }
 
 .btn-cadastrar-login:hover:hover {

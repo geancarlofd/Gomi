@@ -1,0 +1,38 @@
+
+.table-ranking{
+    margin-top: 70px;
+    margin-bottom: 60px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.404);
+    width: 100%;
+    height: 100%;
+}
+
+.title-column-ranking{
+    font-size: 33px;
+    color: #818181;
+}
+
+.first-position-ranking{
+    color: #A89914;
+    font-size: 24px;
+}
+
+.second-position-ranking{
+    color: #2B531A;
+    font-size: 24px;
+}
+
+.third-position-ranking{
+    color: #85290d;
+    font-size: 24px;
+}
+
+.img-ranking{
+  background-image: url("../../assets/ranking/ranking.png");
+  width: 100%;
+  height: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain; /* Resize the background image to cover the entire container */
+}

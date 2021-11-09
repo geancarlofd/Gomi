@@ -1,68 +1,52 @@
 import React, { useState } from 'react';
-import { Collapse,
-    Navbar,
-    NavbarToggler,
-    Nav,
-    NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-    NavbarText
-  } from 'reactstrap';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  Nav,
+  NavItem,
+  NavLink
+} from 'reactstrap';
 
-  const Menu = (props) => {
-    const [isOpen, setIsOpen] = useState(false);
-  
-    const toggle = () => setIsOpen(!isOpen);
-  
-    return (
-      <div className="menu-cabecalho">
-        <Navbar light expand="md" >
-          <NavbarToggler onClick={toggle} />
-  
-          <Collapse isOpen={isOpen} navbar>
-  
-            <Nav className="mr-auto" navbar>
-              <NavItem /* Menu Ranking */> 
-                <NavLink href="/ranking">Ranking</NavLink>
-              </NavItem> &nbsp; &nbsp; &nbsp;
-  
-              <NavItem /* Menu GitHub */>
-                <NavLink href="https://github.com/geancarlofd/Gomi">GitHub</NavLink> 
-              </NavItem>
-            </Nav> &nbsp; &nbsp; &nbsp;
-  
-            <NavbarText /* Menu Texto */>Simple Text</NavbarText> &nbsp; &nbsp; &nbsp;
+const Menu = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
 
-            <Nav navbar /* Menu Opções */>
-              <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle nav caret>
-                    Options
-                  </DropdownToggle>
-                  <DropdownMenu right>
-                    <DropdownItem>
-                      Option 1
-                    </DropdownItem>
-                    <DropdownItem>
-                      Option 2
-                    </DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem>
-                      Reset
-                    </DropdownItem>
-                  </DropdownMenu>
-                </UncontrolledDropdown>
-            </Nav>
-            
+  const toggle = () => setIsOpen(!isOpen);
 
-          </Collapse>
-        </Navbar>
-      </div>
-    );
-  }
+  return (
+    <div className="menu-cabecalho">
+      <Navbar light expand="md" >
+        <NavbarToggler onClick={toggle} />
+
+        <Collapse isOpen={isOpen} navbar>
+
+          <Nav className="mr-auto" navbar>
+            <NavItem>
+              <NavLink href="/timeline">Timeline</NavLink>
+            </NavItem> &nbsp; &nbsp; &nbsp;
+
+            <NavItem>
+              <NavLink href="/Descarte">Descarte</NavLink>
+            </NavItem>&nbsp; &nbsp; &nbsp;
+
+            <NavItem>
+              <NavLink href="/ranking">Ranking</NavLink>
+            </NavItem>&nbsp; &nbsp; &nbsp;
+
+            <NavItem>
+              <NavLink href="/perfil">Perfil</NavLink>
+            </NavItem>&nbsp; &nbsp; &nbsp;
+
+            <NavItem>
+              <NavLink href="/">Sair</NavLink>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Navbar>
+    </div>
+  );
+}
 
 
 
-  export default Menu;
+export default Menu;
