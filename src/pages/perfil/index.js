@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import gomi from "../../assets/telaDescarte/gomi.png";
 import gomiNome from "../../assets/telaDescarte/gomiNome.png";
-import fotoPerfil from "../../assets/perfil/gisele.jpg";
+import fotoPerfil from "../../assets/perfil/fotoPerfil.jpeg";
 import Menu from './HeadersPerfil/headersPerfil.js';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
