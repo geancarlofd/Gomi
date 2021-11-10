@@ -2,10 +2,14 @@ import React, { useEffect, useState, Component } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import firebase from '../../firebase';
 
+import Menu from './HeadersTimeline/headersTimeline.js';
 import Postagem from '../timeline/Postagem/index.js';
-
 import NovaPostagem from '../timeline/NovaPostagem/index.js';
 
+import gomi from "../../assets/telaDescarte/gomi.png";
+import gomiNome from "../../assets/telaDescarte/gomiNome.png";
+
+import '../timeline/timeline.css'
 
 
 function Timeline() {
@@ -48,7 +52,13 @@ function Timeline() {
     }
 
     return (
-        <div>
+        <div class="gradientTimeline">
+            <div className="body">
+                <div className="bcg-cabecalho">
+                    <img className="imgGomi" src={gomi}></img>
+                    <img className="imgGomiNome" src={gomiNome}></img>
+                    <Menu />
+                </div>
             <button onClick={sair}>Sair</button> <br />
             <NovaPostagem uid={uidUser} nome={nomeUser}/>
             {feed.map(({ id, post }) => (
@@ -61,6 +71,7 @@ function Timeline() {
                     flg_img = {post.flg_img}
                 />
             ))}
+            </div>
         </div>
     )
 }

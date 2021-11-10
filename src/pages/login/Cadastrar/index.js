@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-import React, { useEffect, useState } from 'react';
-import { useHistory } from 'react-router-dom';
-=======
 import React, { useEffect, useState} from 'react';
 import {Link, useHistory } from 'react-router-dom';
->>>>>>> 39197e6a84a838daba84e29a41fd2685209f21ea
 import '../../../rotas'
 import firebase from '../../../firebase';
 import './cadastrar.css';
@@ -127,26 +122,7 @@ function Cadastrar() {
     }
 
     return (
-        <div>
-<<<<<<< HEAD
-            <button onClick={MudarTela}>Voltar</button>
-
-            <div className="cadastrar-box">
-                <p>Nome:</p>
-                <input type="text" onChange={(e) => { setNome(e.target.value) }} />
-                <p>Sobrenome:</p>
-                <input type="text" onChange={(e) => { setSobrenome(e.target.value) }} />
-                <p>Data de Nascimento:</p>
-                <input type="Date" onChange={(e) => { setDtaNasc(e.target.value) }} /> <p>{mensagemIdade}</p>
-                <p>Email:</p>
-                <input type="text" onChange={(e) => { setEmail(e.target.value) }} />
-                <p>Senha:</p>
-                <input type="password" onChange={(e) => { setSenha(e.target.value) }} />
-                <p>Confirmar Senha:</p>
-                <input type="password" onChange={(e) => { setSenhaConfirm(e.target.value) }} /> <br />
-
-=======
-
+        <div className="gradient">
             <Link to="/login"><img className="seta" src={seta}></img></Link>
             {/* <button className="btn-voltar-cadastrar" onClick={MudarTela}>Voltar</button> */}
 
@@ -163,19 +139,12 @@ function Cadastrar() {
                 <input className="input-cadastrar" type="password" placeholder="Senha" onChange={(e) => { setSenha(e.target.value) }}/>
                 <p className="text-cadastrar-confirm-password">Confirmar Senha:</p>
                 <input className="input-cadastrar" type="password" placeholder="Confirmar Senha" onChange={(e) => { setSenhaConfirm(e.target.value) }}/> <br />
-                
->>>>>>> 39197e6a84a838daba84e29a41fd2685209f21ea
                 <p>{mensagem}</p>
 
                 <button className="btn-cadastrar-cadastrar" onClick={cadastrar}>Cadastrar</button>
             </div>
         </div>
     )
-<<<<<<< HEAD
-
-=======
->>>>>>> 39197e6a84a838daba84e29a41fd2685209f21ea
 }
 
-
-export default Cadastrar
+export default Cadastrar;

@@ -3,6 +3,11 @@
 .card-cadastrar{
     text-align: center;
     margin-top: 3%;
+    background-color: #0000000e;
+    padding:45px;
+    padding-top:10px;
+    padding-bottom:40px;
+    border-radius:3px;
 }
 
 /* Textos campos cadastros */
@@ -53,8 +58,11 @@
 .seta{
     transform: rotate(90deg);
     width: 35px;
-    margin-top: 15px;
-    margin-left: 15px;
+    /*margin-top: 15px;
+    margin-left: 15px;*/
+    position:absolute;
+    top:15px;
+    left:15px;
 }
 
 /* Botões */
@@ -73,4 +81,37 @@
 .btn-cadastrar-cadastrar:hover:hover{
     cursor: pointer;
     background-color: #346b1c;
+}
+
+/*Gradiente*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.gradient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, #a8991475, #346b1c70, #2b531a9c);
+    background-size: 300% 300%;
+    animation: colors 15s ease infinite;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }

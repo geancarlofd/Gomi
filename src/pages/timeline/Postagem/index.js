@@ -21,7 +21,7 @@ const Postagem = ({docId, nome, corpoTexto, dataHora, flg_img}) => {
             });
             return (<div><img className="imgPost" src={imgURL}/></div>)
         }
-        return("DOOOOCE")
+        return("")
     }
 
     return (
