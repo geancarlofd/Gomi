@@ -52,14 +52,13 @@ function Timeline() {
     }
 
     return (
-        <div class="gradientTimeline">
+        <div class="gradientGeral">
             <div className="body">
                 <div className="bcg-cabecalho">
                     <img className="imgGomi" src={gomi}></img>
                     <img className="imgGomiNome" src={gomiNome}></img>
                     <Menu />
                 </div>
-            <button onClick={sair}>Sair</button> <br />
             <NovaPostagem uid={uidUser} nome={nomeUser}/>
             {feed.map(({ id, post }) => (
                 <Postagem

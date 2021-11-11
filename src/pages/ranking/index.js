@@ -18,7 +18,7 @@ class App extends Component {
   render() {
     return (
       <div>
-          <div className="body">
+        <div className="body">
             <div className="bcg-cabecalho">
               <img className="imgGomi" src={gomi}></img>
               <img className="imgGomiNome" src={gomiNome}></img>

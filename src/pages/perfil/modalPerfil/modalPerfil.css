@@ -1,4 +1,10 @@
 
+.seta{
+    position:absolute;
+
+    top:160px;
+}
+
 /* Text do nome da lista de amigos */
 .text-amigos-modal {
     font-size: 30px;

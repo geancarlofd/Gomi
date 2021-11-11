@@ -72,6 +72,7 @@ function Cadastrar() {
                     sobrenome: sobrenome,
                     email: email,
                     dtaNasc: dtaNasc,
+                    pontos:0,
                     amigos: []
                 }).then((docRef) => {
                     console.log("Document written with ID: ", docRef.id);

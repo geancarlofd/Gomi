@@ -5,14 +5,14 @@ import {
 } from 'reactstrap';
 import "./listaDescarte.css";
 
-function alertaExclusaoDescarte() {
+/*function alertaExclusaoDescarte() {
   return (
     <UncontrolledAlert color="info">
       ;------------------;
     </UncontrolledAlert>
 
   );
-}
+}*/
 
 const ListaDescarte = (props) => {
   return (
@@ -32,14 +32,14 @@ const ListaDescarte = (props) => {
            <CardSubtitle tag="h6" className="table-titulo-lista">Lixo Descartado: </CardSubtitle> 
           </td>
           <td>
-            <CardText className="td-resposta">Qualquer coisa.</CardText> 
+            <CardText className="td-resposta">{props.nomeLixoDescarte}</CardText> 
           </td>
 
           <td>
             <CardSubtitle tag="h6" className="table-titulo-lista">Quantidade: </CardSubtitle> 
           </td>
           <td>
-            <CardText className="td-resposta">Qualquer coisa.</CardText> 
+            <CardText className="td-resposta">{props.qtdeDescarte}</CardText> 
           </td>
         </tr>
 
@@ -48,7 +48,7 @@ const ListaDescarte = (props) => {
             <CardSubtitle tag="h6" className="table-titulo-lista">Data Descarte:  </CardSubtitle> 
           </td>
           <td>
-            <CardText className="td-resposta">Qualquer coisa.</CardText> 
+            <CardText className="td-resposta">{props.dataDescarte}</CardText> 
           </td>
         </tr>
 
@@ -58,14 +58,14 @@ const ListaDescarte = (props) => {
           </td>
 
           <td>
-            <CardText className="td-resposta">Qualquer coisa.</CardText> 
+            <CardText className="td-resposta">{props.tipoLixoDescarte}</CardText> 
           </td>
 
           <td>
             <CardSubtitle tag="h6" className="table-titulo-lista">Forma de Descarte:  </CardSubtitle> 
           </td>
           <td>
-            <CardText className="td-resposta">Qualquer coisa.</CardText> 
+            <CardText className="td-resposta">{props.formaDescarte}</CardText> 
           </td>
         </tr>
 
@@ -76,7 +76,7 @@ const ListaDescarte = (props) => {
             <button className="btn-editar">Editar</button> 
           </td>
           <td>
-            <button className="btn-excluir" onSubmit={alertaExclusaoDescarte} type="submit">Excluir</button>
+            <button className="btn-excluir"  type="submit">Excluir</button>
           </td>
         </tr>
         </CardBody>

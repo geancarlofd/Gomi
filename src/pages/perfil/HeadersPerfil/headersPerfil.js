@@ -7,10 +7,17 @@ import { Collapse,
     NavLink
   } from 'reactstrap';
 
+import '../HeadersPerfil/pointer.css'
+import firebase from '../../../firebase';
+
   const Menu = (props) => {
     const [isOpen, setIsOpen] = useState(false);
   
     const toggle = () => setIsOpen(!isOpen);
+
+    async function sair() {
+      await firebase.auth().signOut();
+    }
   
     return (
       <div className="menu-cabecalho">
@@ -37,7 +44,7 @@ import { Collapse,
               </NavItem>&nbsp; &nbsp; &nbsp;
 
               <NavItem>
-                <NavLink href="/">Sair</NavLink>
+                <NavLink className="pointer" onClick={sair}>Sair</NavLink>
               </NavItem>&nbsp; &nbsp; &nbsp;
             </Nav> &nbsp; &nbsp; &nbsp;
 
