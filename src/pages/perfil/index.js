@@ -15,6 +15,8 @@ import './perfil.css';
 function Perfil() {
   const [nomeUser, setNomeUser] = useState('')
   const [emailUser, setEmailUser] = useState('')
+  const [uidUser, setUidUser] = useState('')
+  const [pontos, setPontos] = useState('')
 
   const history = useHistory();
 
@@ -29,8 +31,22 @@ function Perfil() {
         else {
           setNomeUser(user.displayName)
           setEmailUser(user.email)
+          setUidUser(user.uid)
+
+          firebase.firestore().collection("dadosUsuario").doc(user.uid).get().then((doc) => {
+            if (doc.exists) {
+              setPontos(doc.data().pontos)
+            } else {
+              // doc.data() will be undefined in this case
+              console.log("No such document!");
+            }
+          }).catch((error) => {
+            console.log("Error getting document:", error);
+          });
+
         }
-      })
+      });
+
 
     })
       
@@ -70,6 +86,15 @@ function Perfil() {
                 </td>
                 <td>
                   <p className="text-dados-perfil-resposta">{emailUser}</p> 
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p className="text-dados-perfil">Pontos: </p>
+                </td>
+                <td>
+                  <p className="text-dados-perfil-resposta">{pontos}</p>
                 </td>
               </tr>
             </table>

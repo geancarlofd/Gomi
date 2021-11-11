@@ -40,6 +40,7 @@ function ModalPerfil() {
 					</tr>
 				</table>
 			</div>
+			
 
 			</div>
 		</div>

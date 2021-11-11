@@ -52,6 +52,7 @@ function TelaDescarte() {
         });
       })
     setFeedDescarte(feedArray)
+    console.log(feedArray)
     setDescarte(true)
   }
 
